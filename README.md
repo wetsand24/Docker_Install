@@ -10,8 +10,7 @@ $ ``sudo apt install docker-ce``
 $ ``sudo systemctl status docker``  
 
 
-Portainer Command:
-
+# Portainer Install Commands:
 $ ``mkdir docker``  
 $ ``sudo docker volume create portainer_data``  
 $ ``sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer \
