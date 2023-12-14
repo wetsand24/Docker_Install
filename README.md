@@ -9,13 +9,12 @@ $ ``sudo apt update``
 $ ``sudo apt install docker-ce``  
 $ ``sudo systemctl status docker``  
 
+## To test Docker you can use this command :
+
+$ ``sudo docker run hello-world ``
+
 
 # Portainer Install Commands:
 $ ``mkdir docker``  
 $ ``sudo docker volume create portainer_data``  
-$ ``sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer \
-    --net=host \
-    --restart=always \
-    -v /var/run/docker.sock:/var/run/docker.sock \
-    -v portainer_data:/data \
-    portainer/portainer-ce:2.9.3``  
+$ ``sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --net=host --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.9.3``  
